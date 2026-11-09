@@ -4,7 +4,7 @@ document.getElementById('yr').textContent = new Date().getFullYear();
 const root = document.documentElement;
 try { const t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch (e) {}
 document.getElementById('theme').addEventListener('click', () => {
-  const dark = getComputedStyle(root).getPropertyValue('--bg').trim() === '#141210';
+  const dark = getComputedStyle(root).getPropertyValue('--bg').trim() === '#0b1730';
   root.dataset.theme = dark ? 'light' : 'dark';
   try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
 });
