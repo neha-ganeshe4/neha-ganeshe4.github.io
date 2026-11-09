@@ -38,9 +38,14 @@ function experienceHTML(x) {
     <h3 id="m-title">${esc(x.role)}</h3>
     <p class="sub">${esc(x.org)}</p>
     ${x.metrics.length ? `<ul class="metrics">${x.metrics.map(m => `<li>${esc(m)}</li>`).join('')}</ul>` : ''}
-    ${x.sections.map(s => `<h4>${esc(s.h)}</h4><ul>${s.items.map(i => `<li>${esc(i)}</li>`).join('')}</ul>`).join('')}
+    <div class="story">${x.story.map(p => `<p>${esc(p)}</p>`).join('')}</div>
     ${tools(x.tools)}`;
 }
+
+const demoLinks = links => links && links.length
+  ? `<h4>See it</h4><div class="demo">${links.map(l =>
+      `<a class="btn primary" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join('')}</div>`
+  : '';
 
 function projectHTML(p) {
   return `
@@ -49,7 +54,8 @@ function projectHTML(p) {
     <p class="overview">${esc(p.overview)}</p>
     <h4>What I did</h4>
     <ul>${p.items.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
-    ${tools(p.tools)}`;
+    ${tools(p.tools)}
+    ${demoLinks(p.links)}`;
 }
 
 // ---------- Experience rows ----------

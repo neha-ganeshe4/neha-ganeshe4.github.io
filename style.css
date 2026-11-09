@@ -111,6 +111,10 @@ dialog h4{margin:22px 0 6px;font-size:.78rem;letter-spacing:.07em;text-transform
 dialog ul{margin:0;padding-left:20px}
 dialog li{margin-bottom:8px}
 .overview{font-size:1.02rem;margin:14px 0 0}
+.story p{margin:18px 0 0;font-size:1.02rem;line-height:1.75}
+.demo{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.demo .btn{font-size:.9rem;padding:9px 16px}
+.soon{color:var(--muted);font-size:.9rem;margin:22px 0 0}
 .metrics{list-style:none;padding:0!important;display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0!important}
 .metrics li{background:var(--gold);color:var(--on-gold);border-radius:999px;padding:4px 14px;font-size:.84rem;font-weight:600;margin:0}
 

@@ -7,25 +7,16 @@ const EXPERIENCE = [
     org: 'Linedata Financial Services',
     place: 'Boston, MA',
     dates: 'Jan – May 2026',
-    summary: 'Built the reporting pipeline and tracking system that cut monthly prep by ~70% and lifted update compliance from ~40% to 85%+.',
-    metrics: ['~70% less reporting prep', '40% → 85%+ compliance', '12 product lines audited'],
-    sections: [
-      { h: 'Data pipelines & BI', items: [
-        'Built a Python Product Intelligence pipeline doing ETL on SAP exports and Productboard API data, producing Power BI-ready fact tables and star-schema Excel workbooks. It cut monthly reporting prep by ~70% and saved 15+ hours per cycle.',
-        'Built Power BI dashboards tracking delivery, priority and risk, and budget KPIs for stakeholders from individual managers to leadership.',
-        'Engineered Deneb (Vega-Lite) visuals with versioned JSON specs, pixel-regression tests and data-contract checks, so one parameterized template could produce consistent quarterly PDF exports.',
-        'Used generative AI to speed up reusable pipelines that flatten and refresh multi-product budget, forecast and actuals workbooks, improving traceability and reducing manual reconciliation.' ]},
-      { h: 'Process automation & integrations', items: [
-        'Rolled out a Project Tracking System on Microsoft Lists/SharePoint with Power Automate (weekly triggers, Adaptive Cards to Teams), lifting Product Lead update compliance from ~40% to 85%+ across 30+ initiatives.',
-        'Led a Jira–Productboard audit across 12 product lines and 24+ Jira projects. Documented sync methods, field mappings and visibility scopes, set a 5-bucket status colour theme, and flagged 6 unintegrated products.',
-        'Standardized the integrations and wrote step-by-step guides to support stakeholder adoption and change management.',
-        'Automated scheduled exports, stale-project reminders and distribution through SharePoint, Teams and email.' ]},
-      { h: 'Finance analytics & data quality', items: [
-        'Reconciled budget, forecast and actual views across financial workbooks and ran variance analysis for product managers and finance stakeholders to support monthly planning.',
-        'Validated Power BI outputs against raw financial workbooks, and hardened pipelines against inconsistent monthly formats, dirty values and new-product edge cases.',
-        'Turned business requirements into KPI definitions and dashboard specs in weekly check-ins, mocking up layouts before development to cut rework. Acted as the point of contact for metric questions.' ]}
+    summary: 'I replaced hours of manual monthly reporting with a pipeline, and got product leads to actually update their projects.',
+    metrics: ['~70% less reporting prep', '40% → 85%+ update compliance', '12 product lines audited'],
+    story: [
+      'When I joined Linedata, monthly reporting meant more than 15 hours of manual work every cycle: exports from SAP, data from Productboard, and a lot of copying between spreadsheets. So I started there. I wrote a Python pipeline that pulls the SAP exports and Productboard data, cleans them, and produces tables that Power BI can read directly. Monthly reporting prep dropped by about 70%.',
+      'On top of that data I built Power BI dashboards that followed delivery, priority and risk, and budget numbers, for everyone from individual product managers to leadership. For the quarterly PDF reports I built one parameterized visual template, with version-controlled specs and automated checks, so every export looked the same.',
+      'The next problem was people, not data. Product leads were not updating their projects regularly, so I built a project tracking system in Microsoft Lists and SharePoint, with Power Automate sending weekly reminders to Teams. Update compliance went from about 40% to over 85% across 30+ initiatives.',
+      'I also audited how Jira and Productboard talked to each other across 12 product lines and 24+ Jira projects. I wrote down how each one synced, standardized the field mappings, set a shared status colour scheme, and flagged six products that weren\'t connected at all. Then I wrote step-by-step guides so teams could adopt the changes.',
+      'Along the way I worked closely with finance. I reconciled budget, forecast and actuals, explained the variances to product managers, and checked every dashboard number against the raw workbooks before anyone relied on it. In weekly check-ins I turned their questions into KPI definitions and mocked up layouts first, which saved a lot of rework.'
     ],
-    tools: ['Python', 'Power BI', 'Deneb / Vega-Lite', 'Power Automate', 'SharePoint', 'Jira', 'Productboard']
+    tools: ['Python', 'Power BI', 'Power Automate', 'SharePoint', 'Jira', 'Productboard', 'Generative AI']
   },
   {
     id: 'jio-da',
@@ -33,19 +24,13 @@ const EXPERIENCE = [
     org: 'Reliance Jio Infocom',
     place: 'Mumbai, India',
     dates: 'Feb – Jul 2024',
-    summary: 'Designed PySpark pipelines for a SAP HANA to Hive migration on 10M+ daily records and automated the ETL with Airflow.',
+    summary: 'I moved from product into data, helping migrate a retail data platform that handled 10M+ records a day.',
     metrics: ['10M+ records a day', '25% faster processing', '80% less manual work'],
-    sections: [
-      { h: 'Engineering & migration', items: [
-        'Wrote and optimized SQL for 10M+ record datasets (complex joins, subqueries, hierarchical grouping) across Reliance\'s retail data infrastructure, cutting processing time by 25%.',
-        'Designed PySpark pipelines on 10M+ daily records for a SAP HANA to Hive migration, and moved SQL scripts to PySpark for distributed scale.',
-        'Scheduled and orchestrated daily ETL with Apache Airflow, reducing manual intervention by 80%.',
-        'Troubleshot processing failures, validated outputs and documented fixes across the migration.' ]},
-      { h: 'Analytics & insight', items: [
-        'Built KPIs such as delivery fulfilment and customer retention for 1M+ e-commerce customers.',
-        'Designed Power BI dashboards and maintained 15+ Tableau dashboards for retail and inventory operations, removing reporting duplication.',
-        'Benchmarked competitor and market trends, and tested growth and stagnation hypotheses against sales, marketing and customer data, producing recommendations for product and marketing strategy.',
-        'Ran 50+ data validation checks a month on documentation going to stakeholder reviews, and root-cause analysis that sped up data migration.' ]}
+    story: [
+      'After more than a year as a product manager, I moved to Reliance\'s data team. The big job was migrating retail data from SAP HANA to Hive. I worked with data engineers to design PySpark pipelines that handled over 10 million records a day, and moved existing SQL scripts into PySpark so they could scale across a distributed system.',
+      'I also wrote SQL for very large tables (10M+ records) and tuned the queries until processing time dropped by 25%. To keep the migrated pipelines running without people babysitting them, I used Apache Airflow to schedule the jobs and run the daily ETL. That cut manual intervention by 80%.',
+      'The data was only useful if someone could read it, so I built KPIs like delivery fulfilment and customer retention for more than a million e-commerce customers. I also designed Power BI dashboards and maintained over 15 Tableau dashboards for retail and inventory teams, merging reports that overlapped.',
+      'I also looked outward. I benchmarked competitors, tested hypotheses about what was driving growth or stagnation against sales and customer data, and turned the results into recommendations for product and marketing. Each month I ran 50+ validation checks on documentation going to stakeholders, because I wanted the numbers to hold up in review.'
     ],
     tools: ['SQL', 'PySpark', 'Apache Airflow', 'Hive', 'SAP HANA', 'Tableau', 'Power BI']
   },
@@ -55,25 +40,14 @@ const EXPERIENCE = [
     org: 'Reliance Jio Infocom',
     place: 'Mumbai, India',
     dates: 'Jul 2022 – Feb 2024',
-    summary: 'Owned 15+ features across Ajio, JioBook and JioPC, leading a team of 15 graduate trainees from research to launch.',
+    summary: 'My first product job: 15+ features across Ajio, JioBook and JioPC, with a team of 15 graduate trainees.',
     metrics: ['15+ features shipped', '20% adoption growth', '15% fewer crashes'],
-    sections: [
-      { h: 'Product leadership', items: [
-        'Owned the lifecycle of 15+ features across three products (Ajio e-commerce app, JioBook and JioPC), leading 15 graduate trainees through development, testing and launch.',
-        'Analysed rival apps to find market gaps, and used the findings to prioritize features and shape roadmaps with cross-functional teams.',
-        'Delivered 5 features ahead of schedule, improving customer satisfaction by 20%.',
-        'Led testing of JioBook, JioPC and 12 Jio FTTX products (JioCinema, JioTV and more), managing dependencies, clearing blockers and presenting recommendations to leadership.' ]},
-      { h: 'Research, design & delivery', items: [
-        'Ran user interviews and voice-of-customer sessions that surfaced 50+ enhancements. Wrote user stories, acceptance criteria and Jobs to Be Done.',
-        'Wireframed 150+ frames for a UI/UX redesign with the design team, and ran A/B tests to decide what to build.',
-        'Wrote PRDs, journey maps, user docs and onboarding guides for 15+ launches, and supported go-to-market for JioBook.',
-        'Worked in Scrum with engineering, design and QA, managing 100+ Jira tickets a week and speeding sprint completion by 15%.',
-        'Built project plans with work breakdown structures in Microsoft Project, and managed change control for 30+ enhancement requests.' ]},
-      { h: 'Quality & performance', items: [
-        'Tracked KPIs with SQL and Excel to drive 20% feature adoption growth, and built Excel and Tableau views that raised efficiency by 20%.',
-        'Analysed app logs and user behaviour to cut crash rates by 15%.',
-        'Logged 800+ bugs across 5 in-house apps in Excel, wrote test cases for the MyJio ChatBot, and tracked its accuracy and user feedback trends.',
-        'Coordinated a third-party vendor on an external app, turning QA findings into technical requirements and escalating defects.' ]}
+    story: [
+      'My career started at Reliance Jio, where my portfolio covered three very different products: Ajio, an online clothing store, and two hardware products, JioBook and JioPC. I owned the lifecycle of more than 15 features and led a team of 15 graduate trainees from the first idea to launch.',
+      'Every feature started with listening. I ran user interviews and voice-of-customer sessions that turned up more than 50 improvements, and studied rival apps to find gaps in the market. I turned what I learned into user stories, acceptance criteria and roadmap priorities. Before engineers built anything, I worked with the design team on 150+ wireframe frames so stakeholders could react to something real, and I ran A/B tests to decide which versions deserved to ship.',
+      'Day to day I worked in Scrum with engineering, design and QA, and handled over 100 Jira tickets a week. Sprints finished about 15% faster. I kept project plans and managed 30+ change requests so new scope landed in the timeline without surprises. I also wrote the PRDs, journey maps and onboarding guides for 15+ launches and supported the go-to-market work for JioBook.',
+      'Launch wasn\'t the end. I tracked adoption with SQL and Excel, and feature adoption grew 20%. I dug through app logs for performance problems and cut crash rates by 15%. I logged more than 800 bugs across five in-house apps and wrote the test cases for the MyJio ChatBot, then tracked its accuracy and user feedback. I also coordinated with an outside vendor on an external app, turning QA findings into requirements.',
+      'Five of my features shipped ahead of schedule, and customer satisfaction rose 20%. I also led testing for JioBook, JioPC and 12 Jio FTTX products such as JioCinema and JioTV, clearing blockers, mentoring the trainees and presenting recommendations to leadership.'
     ],
     tools: ['Jira', 'SQL', 'Excel', 'Tableau', 'Figma', 'Microsoft Project']
   },
@@ -83,17 +57,11 @@ const EXPERIENCE = [
     org: 'Northeastern University',
     place: 'Boston, MA',
     dates: '2025 – 2026',
-    summary: 'Instructional Assistant in ITS Client Experience, and Residential Security Officer.',
+    summary: 'Two student jobs that taught me to stay calm and helpful with people in the moment.',
     metrics: [],
-    sections: [
-      { h: 'Instructional Assistant, ITS Client Experience (Sep – Dec 2026)', items: [
-        'Gave front-line help on classroom and audiovisual systems, troubleshooting hardware, display and connectivity issues.',
-        'Set up and monitored projectors, computers and AV equipment, and helped faculty, students and staff with technical questions.',
-        'Documented recurring issues and escalated complex ones to the right IT teams.' ]},
-      { h: 'Residential Security Officer (Aug 2025 – Jun 2026)', items: [
-        'Resolved student questions in real time as the front-line contact in a residential setting.',
-        'Verified IDs and granted building access through the Husky ID tap-in system.',
-        'Responded to emergencies and escalations, staying in direct contact with supervisors and NUPD.' ]}
+    story: [
+      'Alongside my Master\'s, I have worked two campus jobs. From August 2025 to June 2026 I was a Residential Security Officer: the front-line contact for students, answering questions in real time, verifying IDs through the Husky ID tap-in system, and staying in direct contact with supervisors and NUPD when something needed escalating.',
+      'From September 2026 I have been an Instructional Assistant in ITS Client Experience. I help faculty, students and staff with classroom technology, setting up and troubleshooting projectors, computers and AV equipment, documenting issues that keep coming back, and passing the hard ones to the right IT team.'
     ],
     tools: []
   }
@@ -132,17 +100,24 @@ const PROJECTS = [
     summary: 'Bayesian and Poisson models on WTO tariffs for 100+ economies.',
     overview: 'Analysed WTO tariff data across 100+ economies to support policy recommendations.',
     items: ['Built predictive models (Poisson GLM, MLE) and used Bayesian modelling.', 'Ran t-tests and chi-squared tests on regional and category tariff differences.', 'Visualised the results with Seaborn and Matplotlib.'],
-    tools: ['Python', 'Seaborn', 'Matplotlib'] },
+    tools: ['Python', 'Seaborn', 'Matplotlib'],
+    links: [
+      { label: 'Open the notebook', url: 'https://github.com/neha-ganeshe4/Global-Agricultural-Tariff-Analysis/blob/main/FINALPROJECT_GROUP15.ipynb' },
+      { label: 'GitHub repo', url: 'https://github.com/neha-ganeshe4/Global-Agricultural-Tariff-Analysis' }] },
   { title: 'Investment Fund Management System', sub: 'SQL & databases · Oct–Nov 2024', t: ['data'],
     summary: 'Investment tracking platform with a Power BI dashboard.',
     overview: 'Led development of a platform for tracking mutual funds, hedge funds and bonds.',
     items: ['Defined product requirements and user workflows.', 'Designed the ERD and physical schema, and built SQL pipelines and CRUD operations.', 'Delivered a Power BI dashboard for investment insights.'],
-    tools: ['SQL', 'ERD', 'Power BI'] },
+    tools: ['SQL', 'ERD', 'Power BI'],
+    links: [{ label: 'Slides and diagrams on GitHub', url: 'https://github.com/neha-ganeshe4/DMDD_Project' }] },
   { title: 'Klarna Risk Assessment', sub: 'Fintech risk & strategy · Apr–May 2025', t: ['product'],
     summary: 'Third-party AI risk framework with a change-management plan.',
     overview: 'Developed a framework for assessing third-party AI risk covering governance, impact analysis and regulation.',
     items: ['Applied the ADKAR change management model and business-impact metrics.', 'Assessed operational dependencies, implementation readiness and mitigation strategies.', 'Presented a risk-benefit analysis to stakeholders.'],
-    tools: ['Risk governance', 'ADKAR', 'Strategy'] },
+    tools: ['Risk governance', 'ADKAR', 'Strategy'],
+    links: [
+      { label: 'View the presentation (PDF)', url: 'https://github.com/neha-ganeshe4/Risk-Assessment-Framework-for-Klarna/blob/main/Klarna%20-%20PPT.pdf' },
+      { label: 'GitHub repo', url: 'https://github.com/neha-ganeshe4/Risk-Assessment-Framework-for-Klarna' }] },
   { title: 'SHEIN UI/UX Redesign', sub: 'Product strategy & UX', t: ['product'],
     summary: 'Redesigned product discovery to reduce decision fatigue.',
     overview: 'Redesigned e-commerce product discovery and shopping journeys in Figma.',
@@ -157,7 +132,10 @@ const PROJECTS = [
     summary: 'A feature to help users find their saved Pins fast.',
     overview: 'Designed a feature that helps users quickly locate saved Pins.',
     items: ['Analysed user pain points and proposed MVP features.', 'Showed impact with adoption metrics.', 'Created visual prototypes and value messaging for a simulated go-to-market pitch.'],
-    tools: ['Product strategy', 'Prototyping', 'GTM'] },
+    tools: ['Product strategy', 'Prototyping', 'GTM'],
+    links: [
+      { label: 'Read the case study (PDF)', url: 'https://github.com/neha-ganeshe4/Pinterest-Case-Study/blob/main/Pinterest-Case-Study-FINDING-THAT-ONE-PIN.pdf' },
+      { label: 'GitHub repo', url: 'https://github.com/neha-ganeshe4/Pinterest-Case-Study' }] },
   { title: 'LinkedIn Job Search Redesign', sub: 'Product case study', t: ['product'],
     summary: 'Job search redesigned for early-career users.',
     overview: 'Redesigned the job search experience to reduce job-search fatigue and improve confidence.',
@@ -167,7 +145,10 @@ const PROJECTS = [
     summary: 'Turned Inside Out 2 into a horror short. Won Best Picture.',
     overview: 'Transformed Inside Out 2 into a horror-themed short film using image processing.',
     items: ['Used Python, OpenCV and PIL for cartoonization, automated captions and storyboarding.', 'Won Best Picture and Best Cinematography.'],
-    tools: ['Python', 'OpenCV', 'PIL'] },
+    tools: ['Python', 'OpenCV', 'PIL'],
+    links: [
+      { label: 'Read the storyboard (PDF)', url: 'https://github.com/neha-ganeshe4/Oscars_Project/blob/master/Final_PDF/Inside_out_Horror_within_English.pdf' },
+      { label: 'GitHub repo', url: 'https://github.com/neha-ganeshe4/Oscars_Project' }] },
   { title: 'COVID Growth Study', sub: 'Tableau · Nov 2021', t: ['data'],
     summary: 'Interactive dashboards on global COVID trends.',
     overview: 'Analysed a global COVID-19 dataset (9 variables, mixed data types).',
