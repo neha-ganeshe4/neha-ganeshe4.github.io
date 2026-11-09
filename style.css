@@ -28,7 +28,7 @@ h3{margin:0 0 4px;font-size:1.15rem}
 a{color:inherit}
 button{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-.mark{background:linear-gradient(transparent 62%,var(--gold) 62%,var(--gold) 92%,transparent 92%)}
+.mark{text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:.09em;text-underline-offset:.16em;text-decoration-skip-ink:none}
 .eyebrow{color:var(--muted);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin:0}
 .lead{font-size:1.12rem;color:var(--muted);max-width:620px}
 .sub{color:var(--muted);font-size:.92rem;margin:0 0 10px}
