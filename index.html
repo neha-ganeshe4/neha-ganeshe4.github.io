@@ -5,13 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Neha Ganeshe — Product & Data</title>
 <meta name="description" content="Neha Ganeshe: product manager and data analyst. MS in Management Information Systems at Northeastern. Ex-Reliance Jio, Linedata.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="nav">
-  <a href="#top" class="logo">NG<span>.</span></a>
-  <nav>
+  <a href="#top" class="logo" aria-label="Home">NG</a>
+  <nav aria-label="Main">
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
@@ -24,232 +27,53 @@
 <main id="top">
 
 <section class="hero">
-  <p class="eyebrow">Boston, MA · MS MIS, Northeastern · Graduating Dec 2026</p>
-  <h1>I turn messy data and fuzzy ideas into <em>products people use</em>.</h1>
-  <p class="lead">Product manager and data analyst with experience at Reliance Jio and Linedata. I ship features, build reporting pipelines, and prototype AI tools for healthcare, fintech and supply chain.</p>
+  <p class="eyebrow">Product Manager · Data Analyst · Boston, MA</p>
+  <h1>I turn messy data and fuzzy ideas into <span class="mark">products people use</span>.</h1>
+  <p class="lead">I've shipped features at Reliance Jio, built reporting pipelines at Linedata, and prototyped AI tools for healthcare, fintech and supply chain. MS in Management Information Systems at Northeastern, graduating Dec 2026.</p>
   <div class="cta">
     <a class="btn primary" href="#projects">See my work</a>
     <a class="btn" href="#contact">Get in touch</a>
   </div>
   <ul class="stats">
-    <li><b>15+</b> features shipped across 3 apps</li>
-    <li><b>~70%</b> less monthly reporting prep</li>
-    <li><b>10M+</b> records per day in PySpark pipelines</li>
-    <li><b>85%+</b> update compliance, up from ~40%</li>
+    <li><b>15+</b><span>features shipped across 3 apps</span></li>
+    <li><b>~70%</b><span>less monthly reporting prep</span></li>
+    <li><b>10M+</b><span>records a day in PySpark pipelines</span></li>
+    <li><b>85%+</b><span>update compliance, up from ~40%</span></li>
   </ul>
 </section>
 
-<section id="about">
+<section id="about" class="reveal">
   <h2>About</h2>
   <div class="two">
-    <p>I started as a Product Manager at Reliance Jio, where I led a team of 15 graduate trainees and managed the lifecycle of Ajio, JioBook and JioPC features. I then moved into data, building SQL and PySpark pipelines for a SAP HANA to Hive migration.</p>
-    <p>Today I'm finishing my Master's in Management Information Systems at Northeastern, where I also serve as a Graduate Student Government Senator and Product Manager at the Aspiring Product Managers Committee. Outside work: swimming, sketching and painting, and Bollywood dance.</p>
+    <p>I started as a Product Manager at Reliance Jio, leading a team of 15 graduate trainees and owning the lifecycle of Ajio, JioBook and JioPC features. I then moved into data, building SQL and PySpark pipelines for a SAP HANA to Hive migration.</p>
+    <p>Now I'm finishing my Master's at Northeastern, where I'm a Graduate Student Government Senator and Product Manager at the Aspiring Product Managers Committee. Outside work: swimming, sketching and painting, and Bollywood dance.</p>
   </div>
 </section>
 
-<section id="experience">
+<section id="experience" class="reveal">
   <h2>Experience</h2>
-  <div class="timeline">
-
-    <article>
-      <time>Jan – May 2026</time>
-      <h3>Product Analyst Intern <span>Linedata Financial Services · Boston</span></h3>
-      <h4>Data pipelines & BI</h4>
-      <ul>
-        <li>Built a Python Product Intelligence pipeline doing ETL on SAP exports and Productboard API data, producing Power BI-ready fact tables and star-schema Excel workbooks. It cut monthly reporting prep by ~70% and saved 15+ hours per cycle.</li>
-        <li>Built Power BI dashboards tracking delivery, priority and risk, and budget KPIs for stakeholders from individual managers to leadership.</li>
-        <li>Engineered Deneb (Vega-Lite) visuals with versioned JSON specs, pixel-regression tests and data-contract checks, so one parameterized template could produce consistent quarterly PDF exports.</li>
-        <li>Used generative AI to speed up reusable pipelines that flatten and refresh multi-product budget, forecast and actuals workbooks, improving traceability and reducing manual reconciliation.</li>
-      </ul>
-      <h4>Process automation & integrations</h4>
-      <ul>
-        <li>Rolled out a Project Tracking System on Microsoft Lists/SharePoint with Power Automate (weekly triggers, Adaptive Cards to Teams), lifting Product Lead update compliance from ~40% to 85%+ across 30+ initiatives.</li>
-        <li>Led a Jira–Productboard audit across 12 product lines and 24+ Jira projects. Documented sync methods, field mappings and visibility scopes, set a 5-bucket status colour theme, and flagged 6 unintegrated products.</li>
-        <li>Standardized the integrations and wrote step-by-step guides to support stakeholder adoption and change management.</li>
-        <li>Automated scheduled exports, stale-project reminders and distribution through SharePoint, Teams and email.</li>
-      </ul>
-      <h4>Finance analytics & data quality</h4>
-      <ul>
-        <li>Reconciled budget, forecast and actual views across financial workbooks and ran variance analysis for product managers and finance stakeholders to support monthly planning.</li>
-        <li>Validated Power BI outputs against raw financial workbooks, and hardened pipelines against inconsistent monthly formats, dirty values and new-product edge cases.</li>
-        <li>Turned business requirements into KPI definitions and dashboard specs in weekly check-ins, mocking up layouts before development to cut rework. Acted as the point of contact for metric questions.</li>
-      </ul>
-    </article>
-
-    <article>
-      <time>Feb – Jul 2024</time>
-      <h3>Data Analyst <span>Reliance Jio Infocom · Mumbai</span></h3>
-      <h4>Engineering & migration</h4>
-      <ul>
-        <li>Wrote and optimized SQL for 10M+ record datasets (complex joins, subqueries, hierarchical grouping) across Reliance's retail data infrastructure, cutting processing time by 25%.</li>
-        <li>Designed PySpark pipelines on 10M+ daily records for a SAP HANA to Hive migration, and moved SQL scripts to PySpark for distributed scale.</li>
-        <li>Scheduled and orchestrated daily ETL with Apache Airflow, reducing manual intervention by 80%.</li>
-        <li>Troubleshot processing failures, validated outputs and documented fixes across the migration.</li>
-      </ul>
-      <h4>Analytics & insight</h4>
-      <ul>
-        <li>Built KPIs such as delivery fulfilment and customer retention for 1M+ e-commerce customers.</li>
-        <li>Designed Power BI dashboards and maintained 15+ Tableau dashboards for retail and inventory operations, removing reporting duplication.</li>
-        <li>Benchmarked competitor and market trends, and tested growth and stagnation hypotheses against sales, marketing and customer data, producing recommendations for product and marketing strategy.</li>
-        <li>Ran 50+ data validation checks a month on documentation going to stakeholder reviews, and root-cause analysis that sped up data migration.</li>
-      </ul>
-    </article>
-
-    <article>
-      <time>Jul 2022 – Feb 2024</time>
-      <h3>Product Manager <span>Reliance Jio Infocom · Mumbai</span></h3>
-      <h4>Product leadership</h4>
-      <ul>
-        <li>Owned the lifecycle of 15+ features across three products (Ajio e-commerce app, JioBook and JioPC), leading 15 graduate trainees through development, testing and launch.</li>
-        <li>Analysed rival apps to find market gaps, and used the findings to prioritize features and shape roadmaps with cross-functional teams.</li>
-        <li>Delivered 5 features ahead of schedule, improving customer satisfaction by 20%.</li>
-        <li>Led testing of JioBook, JioPC and 12 Jio FTTX products (JioCinema, JioTV and more), managing dependencies, clearing blockers and presenting recommendations to leadership.</li>
-      </ul>
-      <h4>Research, design & delivery</h4>
-      <ul>
-        <li>Ran user interviews and voice-of-customer sessions that surfaced 50+ enhancements. Wrote user stories, acceptance criteria and Jobs to Be Done.</li>
-        <li>Wireframed 150+ frames for a UI/UX redesign with the design team, and ran A/B tests to decide what to build.</li>
-        <li>Wrote PRDs, journey maps, user docs and onboarding guides for 15+ launches, and supported go-to-market for JioBook.</li>
-        <li>Worked in Scrum with engineering, design and QA, managing 100+ Jira tickets a week and speeding sprint completion by 15%.</li>
-        <li>Built project plans with work breakdown structures in Microsoft Project, and managed change control for 30+ enhancement requests.</li>
-      </ul>
-      <h4>Quality & performance</h4>
-      <ul>
-        <li>Tracked KPIs with SQL and Excel to drive 20% feature adoption growth, and built Excel and Tableau views that raised efficiency by 20%.</li>
-        <li>Analysed app logs and user behaviour to cut crash rates by 15%.</li>
-        <li>Logged 800+ bugs across 5 in-house apps in Excel, wrote test cases for the MyJio ChatBot, and tracked its accuracy and user feedback trends.</li>
-        <li>Coordinated a third-party vendor on an external app, turning QA findings into technical requirements and escalating defects.</li>
-      </ul>
-    </article>
-
-    <article>
-      <time>2025 – 2026</time>
-      <h3>Northeastern University roles <span>Boston</span></h3>
-      <ul>
-        <li><b>Instructional Assistant, ITS Client Experience</b> (Sep – Dec 2026): classroom and AV troubleshooting and escalation.</li>
-        <li><b>Residential Security Officer</b> (Aug 2025 – Jun 2026): front-line customer service, access control and emergency response.</li>
-      </ul>
-    </article>
-
-  </div>
+  <p class="hint">Click any role for the full story.</p>
+  <div id="exp-list" class="rows"></div>
 </section>
 
-<section id="projects">
+<section id="projects" class="reveal">
   <h2>Projects</h2>
-  <div class="filters" role="tablist">
+  <p class="hint">Click a project to see what I built and how.</p>
+  <div class="filters" role="group" aria-label="Filter projects">
     <button class="chip active" data-f="all">All</button>
     <button class="chip" data-f="product">Product</button>
     <button class="chip" data-f="data">Data</button>
     <button class="chip" data-f="ai">AI</button>
   </div>
-  <div class="grid">
-
-    <article class="card" data-t="ai product">
-      <h3>TradeShock AI</h3><p class="sub">Wayfair supply-chain hackathon</p>
-      <p>AI decision-support platform that quantifies how tariff changes hit SKUs, suppliers, landed cost and margins. Multi-agent workflow, deterministic tariff engine, and Jira ticket automation.</p>
-      <p class="tags">Python · FastAPI · React · TypeScript</p>
-    </article>
-
-    <article class="card" data-t="ai data">
-      <h3>MedAssist AI</h3><p class="sub">GenAI for healthcare</p>
-      <p>Biomedical knowledge platform combining LLMs, RAG, knowledge graphs and Snowflake workflows for semantic search and rare-disease retrieval.</p>
-      <p class="tags">LLMs · RAG · Snowflake</p>
-    </article>
-
-    <article class="card" data-t="ai product">
-      <h3>MSL Training Platform</h3><p class="sub">AI hackathon · Oct 2025</p>
-      <p>Chatbot and web app that simulates physician conversations to train Medical Science Liaisons, with persona-based questions and Whisper speech-to-text.</p>
-      <p class="tags">Hugging Face · Whisper</p>
-    </article>
-
-    <article class="card" data-t="data ai">
-      <h3>MedGuard</h3><p class="sub">Healthcare data quality & AI governance</p>
-      <p>Assessed AI training-data readiness on synthetic cardiac and diabetes data; found a 73/27 demographic imbalance and defined validation and de-identification checks.</p>
-      <p class="tags">Data quality · Responsible AI</p>
-    </article>
-
-    <article class="card" data-t="data product">
-      <h3>Glitch</h3><p class="sub">Predictive analytics & healthcare product</p>
-      <p>Researched menopause care gaps across 25+ sources and built a logistic regression model on 500+ records, reaching 0.735 AUC for hot-flash risk.</p>
-      <p class="tags">Python · Cross-validation</p>
-    </article>
-
-    <article class="card" data-t="data">
-      <h3>Global Agricultural Tariff Analysis</h3><p class="sub">Statistical modelling · 2025</p>
-      <p>Bayesian and Poisson GLM models on WTO tariff data across 100+ economies, with hypothesis tests and policy-oriented visualizations.</p>
-      <p class="tags">Python · Seaborn · Matplotlib</p>
-    </article>
-
-    <article class="card" data-t="data">
-      <h3>Investment Fund Management System</h3><p class="sub">SQL & database design · 2024</p>
-      <p>Led an investment tracking platform: ERD and schema design, SQL pipelines and CRUD for funds and bonds, plus a Power BI dashboard.</p>
-      <p class="tags">SQL · Power BI</p>
-    </article>
-
-    <article class="card" data-t="product">
-      <h3>Klarna Risk Assessment</h3><p class="sub">Fintech risk & product strategy · 2025</p>
-      <p>Third-party AI risk framework covering governance and regulation, using ADKAR change management; presented a risk-benefit analysis.</p>
-      <p class="tags">Risk · Change management</p>
-    </article>
-
-    <article class="card" data-t="product">
-      <h3>SHEIN UI/UX Redesign</h3><p class="sub">Product strategy & UX</p>
-      <p>Redesigned product discovery in Figma with Quick View, Shop the Look and an AI assistant to cut decision fatigue.</p>
-      <p class="tags">Figma · UX</p>
-    </article>
-
-    <article class="card" data-t="product ai">
-      <h3>NXT Thrive</h3><p class="sub">Product hackathon · Mar 2025</p>
-      <p>AI wellness assistant using sentiment analysis and workload balancing to predict academic burnout, backed by interviews, surveys and personas.</p>
-      <p class="tags">User research · AI</p>
-    </article>
-
-    <article class="card" data-t="product">
-      <h3>Pinterest Pin Finder</h3><p class="sub">Case study · 2025</p>
-      <p>Designed a feature to help users find saved Pins, with pain-point analysis, MVP scope, adoption metrics and a mock GTM pitch.</p>
-      <p class="tags">Product case study</p>
-    </article>
-
-    <article class="card" data-t="product">
-      <h3>LinkedIn Job Search Redesign</h3><p class="sub">Product case study</p>
-      <p>Smart filters, clearer match insights and application tracking to reduce job-search fatigue for early-career users.</p>
-      <p class="tags">UX · Product</p>
-    </article>
-
-    <article class="card" data-t="data ai">
-      <h3>Inside Out: Horror Within</h3><p class="sub">Data science · 2025</p>
-      <p>Turned Inside Out 2 into a horror short with Python, OpenCV and PIL. Won Best Picture and Best Cinematography.</p>
-      <p class="tags">OpenCV · PIL</p>
-    </article>
-
-    <article class="card" data-t="data">
-      <h3>COVID Growth Study</h3><p class="sub">Tableau · 2021</p>
-      <p>Interactive dashboards on global case volume and severity, filterable by country, date and severity.</p>
-      <p class="tags">Tableau</p>
-    </article>
-
-    <article class="card" data-t="data ai">
-      <h3>Automobile Price Prediction</h3><p class="sub">Machine learning · 2021</p>
-      <p>Linear regression on mileage, engine size and horsepower, validated with MAE and RMSE to surface key price drivers.</p>
-      <p class="tags">scikit-learn</p>
-    </article>
-
-  </div>
+  <div id="proj-grid" class="grid"></div>
 </section>
 
-<section id="skills">
+<section id="skills" class="reveal">
   <h2>Skills</h2>
-  <div class="skills">
-    <div><h3>Product</h3><p>Roadmapping · PRDs · User research · A/B testing · Go-to-market · Wireframing · Prioritization</p></div>
-    <div><h3>Data & BI</h3><p>SQL · Python (Pandas, NumPy) · R · Power BI · Tableau · Excel · Looker · Amplitude</p></div>
-    <div><h3>Data engineering</h3><p>ETL · PySpark · Airflow · Hive · Star schema & ERD · SAP HANA</p></div>
-    <div><h3>AI</h3><p>LLM-assisted development · RAG · Hugging Face · Whisper · scikit-learn · TensorFlow</p></div>
-    <div><h3>Agile & delivery</h3><p>Scrum · Jira · Release management · Change management · Vendor coordination</p></div>
-    <div><h3>Tools & web</h3><p>Figma · Productboard · Power Automate · SharePoint · Snowflake · AWS · Azure · React · FastAPI · TypeScript</p></div>
-  </div>
+  <div id="skill-list" class="skills"></div>
 </section>
 
-<section id="education">
+<section id="education" class="reveal">
   <h2>Education & leadership</h2>
   <div class="two">
     <div>
@@ -259,24 +83,21 @@
       <h3>University of Mumbai</h3>
       <p class="sub">BE, Information Technology · 2018 – 2022</p>
     </div>
-    <div>
-      <ul class="plain">
-        <li><b>Product Manager</b>, Aspiring Product Managers Committee (APMC)</li>
-        <li><b>Senator</b>, Graduate Student Government, Northeastern</li>
-        <li><b>Documentation Head</b>, Student Council, University of Mumbai: led 15 members and 3 years of the college magazine</li>
-        <li><b>Head of Publications</b>, ISTE</li>
-        <li><b>Volunteer</b>, Reliance Foundation</li>
-      </ul>
-    </div>
+    <ul class="plain">
+      <li><b>Product Manager</b>, Aspiring Product Managers Committee (APMC)</li>
+      <li><b>Senator</b>, Graduate Student Government, Northeastern</li>
+      <li><b>Documentation Head</b>, Student Council, University of Mumbai: led 15 members and 3 years of the college magazine</li>
+      <li><b>Head of Publications</b>, ISTE</li>
+      <li><b>Volunteer</b>, Reliance Foundation</li>
+    </ul>
   </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="reveal">
   <h2>Let's talk</h2>
   <p class="lead">I'm open to product management and product analytics roles starting 2027.</p>
   <div class="cta">
     <a class="btn primary" href="mailto:ganeshe.n@northeastern.edu">ganeshe.n@northeastern.edu</a>
-    <!-- TODO: replace # with your real profile URLs -->
     <a class="btn" href="https://www.linkedin.com/in/neha-ganeshe/" target="_blank" rel="noopener">LinkedIn</a>
     <a class="btn" href="https://github.com/neha-ganeshe4" target="_blank" rel="noopener">GitHub</a>
     <!-- TODO: export a resume PDF into this folder and uncomment -->
@@ -287,6 +108,14 @@
 </main>
 
 <footer>© <span id="yr"></span> Neha Ganeshe</footer>
+
+<dialog id="modal" aria-labelledby="m-title">
+  <button class="close" id="m-close" aria-label="Close">×</button>
+  <div id="m-body"></div>
+</dialog>
+
+<noscript><p style="padding:20px;text-align:center">Please enable JavaScript to view experience and projects.</p></noscript>
+<script src="data.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
