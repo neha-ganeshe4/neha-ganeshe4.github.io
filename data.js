@@ -69,6 +69,16 @@ const EXPERIENCE = [
 
 // t = categories used by the filter chips: product | data | ai
 const PROJECTS = [
+  { title: 'NeuroTrail', sub: 'Keytos Hack 2026 · Health track · Team project', t: ['ai', 'data', 'product'],
+    summary: 'Brain-health app that turns evidence-backed habits into daily quests, with no scan or implant needed.',
+    overview: 'A health app that turns the habits with the strongest evidence for brain health into a daily game. Each finished quest lights up a real region on a 3D brain, and the score comes from models trained on public data.',
+    itemsHeading: 'What it does',
+    items: ['Daily missions, brain games and a one-minute speech check, with points weighted by how strong the evidence is.',
+            'Models trained on public data (CDC NHANES, PhysioNet, OASIS) with a fairness audit.',
+            'Optional MRI upload: an ensemble of 3D CNNs estimates brain age with a 95% range and a confidence label. Its usual miss is 5.15 years (r = 0.96), tested on 436 real OASIS scans.',
+            'An AI coach that runs on the user\'s own computer, so patient data never leaves the device.'],
+    tools: ['Python', 'FastAPI', 'scikit-learn', '3D CNNs', 'Three.js', 'Ollama'],
+    links: [{ label: 'Source code on GitHub', url: 'https://github.com/Varsh1009/Keytos-healthcare' }] },
   { title: 'TradeShock AI', sub: 'Wayfair supply-chain hackathon', t: ['ai', 'product'],
     summary: 'AI platform that shows how tariff changes hit SKUs, suppliers and margins.',
     overview: 'A decision-support platform that analyses tariff changes, assesses SKU and supplier exposure, and quantifies the impact on landed cost, profit margins and purchase orders.',

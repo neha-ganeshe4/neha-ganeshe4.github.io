@@ -52,7 +52,7 @@ function projectHTML(p) {
     <p class="kicker">${esc(p.sub)}</p>
     <h3 id="m-title">${esc(p.title)}</h3>
     <p class="overview">${esc(p.overview)}</p>
-    <h4>What I did</h4>
+    <h4>${esc(p.itemsHeading || 'What I did')}</h4>
     <ul>${p.items.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
     ${tools(p.tools)}
     ${demoLinks(p.links)}`;
